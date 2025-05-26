@@ -1,8 +1,2 @@
 #!/bin/bash
-for file in *.html; do
-    if [ -f "$file" ]; then
-        # - Copy only if the file does not exist or is newer than the one in the parent directory
-        cp -u "$file" ../
-        echo "Copied: $file"
-    fi
-done
+cp -u *.html ../
